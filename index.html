@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Task3 slajder</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="pexels-aleksandar-pasaric-2603464.jpg" height="300" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pexels-thisisengineering-3913025.jpg" height="300" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pexels-aleksandar-pasaric-2603464.jpg" height="300" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" height="300" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pexels-josh-sorenson-1714208.jpg" height="300" />
+            </div>
+            <div class="swiper-slide">
+                <img src="pexels-athena-2582937.jpg" height="300" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            loop: true,
+
+        });
+    </script>
+</body>
+
+</html>
